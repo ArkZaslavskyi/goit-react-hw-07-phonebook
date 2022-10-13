@@ -1,11 +1,13 @@
 // import PropTypes from "prop-types";
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { setFilter } from 'redux/filterSlice.js';
+import { getFilter } from 'redux/selectors.js';
 
 import { FilterField, FilterData } from './Filter.styled.js';
 
 const Filter = () => {
     const dispatch = useDispatch();
+    const filter = useSelector(getFilter);
 
     const handleChange = e => {
         const { value } = e.target;
@@ -19,6 +21,7 @@ const Filter = () => {
                 <FilterData
                     type="text"
                     name="filter"
+                    value={filter}
                     onChange={handleChange}
                 />
             </FilterField>
