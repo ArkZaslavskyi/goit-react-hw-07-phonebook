@@ -1,16 +1,17 @@
+import Layout from "components/Layout";
+import ContactForm from "components/ContactForm";
+import Filter from "components/Filter";
+import ContactList from "components/ContactList";
+import { PhonebookTitle, PhonebookSubtitle } from "./App.styled";
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    <Layout>
+      <PhonebookTitle>Phonebook</PhonebookTitle>
+      <ContactForm />
+      <PhonebookSubtitle>Contacts</PhonebookSubtitle>
+      <Filter />
+      <ContactList />
+    </Layout>
   );
 };
