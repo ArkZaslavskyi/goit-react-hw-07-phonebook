@@ -4,7 +4,7 @@ import initialContacts from 'contacts.json'; // <--- get them from localStorage 
 
 const contactsSlice = createSlice({
     name: 'contacts',
-    initialState: initialContacts,
+    initialState: initialContacts, //initialContacts, // [],
     reducers: {
         addContact: {
             reducer(state, action) {
