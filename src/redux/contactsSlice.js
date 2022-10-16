@@ -19,25 +19,6 @@ const contactsSlice = createSlice({
         error: null,
     },
     reducers: {
-        // addContact: {
-        //     reducer(state, action) {
-        //         return [action.payload, ...state];
-        //     },
-        //     prepare({ name, number }) {
-        //         return {
-        //             payload: {
-        //                 id: nanoid(),
-        //                 name,
-        //                 number
-        //             },
-        //         };
-        //     },
-        // },
-        // deleteContact(state, action) {
-        //     return state.filter(contact =>
-        //         contact.id !== action.payload
-        //     );
-        // },
     },
     extraReducers: {
         [fetchContacts.pending]: handlePending,
@@ -67,10 +48,4 @@ const contactsSlice = createSlice({
         [deleteContact.rejected]: handleRejected,    },
 });
 
-
-// fetchContacts - получение массива контактов (метод GET) запросом. Базовый тип экшена "contacts/fetchAll".
-// addContact - добавление контакта (метод POST). Базовый тип экшена "contacts/addContact".
-// deleteContact - удаление контакта (метод DELETE). Базовый тип экшена "contacts/deleteContact".
-
-// export const { addContact, deleteContact } = contactsSlice.actions;
 export const contactsReducer = contactsSlice.reducer;

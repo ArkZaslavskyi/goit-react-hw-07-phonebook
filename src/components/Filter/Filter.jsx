@@ -1,7 +1,6 @@
-// import PropTypes from "prop-types";
 import { useDispatch, useSelector } from 'react-redux';
-import { setFilter } from 'redux/filterSlice.js';
 import { selectFilter } from 'redux/selectors.js';
+import { setFilter } from 'redux/filterSlice.js';
 
 import { FilterField, FilterData } from './Filter.styled.js';
 

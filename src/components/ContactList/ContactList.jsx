@@ -1,4 +1,3 @@
-// import PropTypes from 'prop-types'; 
 import { useSelector } from 'react-redux';
 import { selectContacts, selectFilter, selectIsError } from 'redux/selectors.js';
 import Contact from "components/Contact";
