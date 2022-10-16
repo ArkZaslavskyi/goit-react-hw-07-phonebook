@@ -9,3 +9,7 @@ export const List = styled.ul`
     border: 1px dotted gray;
     list-style: none;
 `;
+
+export const ErrorStyle = styled.h3`
+    color: orange;
+`;

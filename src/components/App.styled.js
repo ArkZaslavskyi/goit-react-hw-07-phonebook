@@ -10,3 +10,7 @@ export const PhonebookTitle = styled.h1`
 export const PhonebookSubtitle = styled.h2`
     margin: 16px 0 8px;
 `;
+
+export const Loading = styled.h3`
+    color: red;
+`;
